@@ -1,0 +1,113 @@
+/*
+---------- Layout ----------
+- Mobile: 375px
+- Desktop: 1440px
+
+---------- Colors ----------
+- Green: hsl(75, 94%, 57%)
+
+- White: hsl(0, 0%, 100%)
+
+- Grey 700: hsl(0, 0%, 20%)
+- Grey 800: hsl(0, 0%, 12%)
+- Grey 900: hsl(0, 0%, 8%)
+
+---------- Typography ----------
+
+- Font size (paragraph): 14px
+
+---------- Font ----------
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
+*/
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: var(--White);
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--Grey-900);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    min-height: 600px;
+}
+
+main {
+    background-color: var(--Grey-800);
+    padding: 32px;
+    border-radius: 12px;
+    max-width: 350px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 82px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.address {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Green);
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.socials a {
+    font-weight: 600;
+    width: auto;
+    padding: 10px 0; 
+    font-size: 1.4rem;
+    border-radius: 6px;
+    background-color: var(--Grey-700);
+}
+
+.socials a:hover,
+.socials a:focus {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
+
